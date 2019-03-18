@@ -139,7 +139,6 @@ class TestSpaceships(unittest.TestCase):
             np.testing.assert_array_equal(self.game.get_board(), board)
 
     def test_glider(self):
-        #Review: TODO configs
         board1 = np.array(
             [[1, 0, 0, 0, 0, 0, 0, 0],
             [0, 1, 1, 0, 0, 0, 0, 0],

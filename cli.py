@@ -71,7 +71,7 @@ def execute(cmd_list):
         return
     fn(cmd_list)
 
-# display the help message on starting the app
+#Display the help message on starting the app
 execute(['help'])
 
 while True:

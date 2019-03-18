@@ -22,16 +22,19 @@ class GameOfLife:
         return self.config
 
     def select(self, pattern_name):
-        self.pattern_name = pattern_name
         if pattern_name.lower() not in self.config:
-            pass #Raise error for invalid selection
+            return False #err: invalid selection
         else:
+            self.pattern_name = pattern_name
             self.cur_board = np.array(self.config[pattern_name.lower()], dtype=np.uint8)
+            self.num_alive = 0
+            self.num_iters = 0
+            return True
 
     def update(self):
         kernel = np.ones((3,3), dtype=np.uint8)
         if self.cur_board is None:
-            pass #Raise error that no option is chosen
+            return False #err: No board chosen
 
         new_board = signal.convolve2d(self.cur_board, kernel, mode="same")
 
@@ -48,6 +51,7 @@ class GameOfLife:
         self.cur_board = new_board
         self.num_iters += 1
         self.num_alive = sum(sum(self.cur_board))
+        return True
 
     def get_board(self):
         return self.cur_board

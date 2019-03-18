@@ -10,32 +10,52 @@ It uses `numpy` for fast operations on 2D arrays as well as `scipy` for a  convo
 The following patterns are implemented (specified in `config.json`):
 ##### Still Lifes 
 1. Block:
+
 ![Block](http://www.conwaylife.com/w/images/4/48/Block.png)
+
 2. Bee-Hive:
+
 ![Bee-Hive](http://www.conwaylife.com/w/images/3/3c/Beehive.png)
+
 3. Loaf:
+
 ![Loaf](http://www.conwaylife.com/w/images/b/ba/Loaf.png)
+
 4. Boat:
+
 ![Boat](http://www.conwaylife.com/w/images/1/1e/Boat.png)
+
 5. Tub:
+
 ![Tub](http://www.conwaylife.com/w/images/b/bf/Tub.png)
 
 ##### Oscialltors
-6. Blinker
+6. Blinker:
+
 ![Blinker](http://www.conwaylife.com/w/images/b/b9/Blinker.gif)
-7. Toad
+
+7. Toad:
+
 ![Toad](http://www.conwaylife.com/w/images/c/cd/Toad.gif)
-8. Beacon
+8. Beacon:
+
 ![Beacon](http://www.conwaylife.com/w/images/4/4b/Beacon.gif)
 
 ##### Spaceships
-9. Glider
+9. Glider:
+
 ![Glider](http://www.conwaylife.com/w/images/8/81/Glider.gif)
+
 10. Light Weight Spaceship (LWSS):
+
 ![LWSS](http://www.conwaylife.com/w/images/2/21/Lwss.gif)
+
 11. Medium Weight Spaceship (MWSS):
+
 ![MWSS](http://www.conwaylife.com/w/images/b/b7/Mwss.gif)
+
 12. Heavy Weight Spaceship (HWSS):
+
 ![HWSS](http://www.conwaylife.com/w/images/d/dd/Hwss.gif)
 
 ## API Description
